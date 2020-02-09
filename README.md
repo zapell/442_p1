@@ -16,8 +16,8 @@ to
 
 This involved calculating the best offset by holding one of the color channels constant and figuring out how much in the x and y direction the image needed to be moved.
 
-Another example of a picture of Efros himself
-![1](https://github.com/zapell/eecs442_p1/blob/master/efros_tableau.jpg)  
+Another example of a picture of Efros himself  
+![1](https://github.com/zapell/eecs442_p1/blob/master/efros_tableau.jpg)   
 ![2](https://github.com/zapell/eecs442_p1/blob/master/aligned_efros_tableau.jpg)
 
 ## Part 2
