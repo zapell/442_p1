@@ -12,3 +12,18 @@ The main objective was to transform the 3 channel black and white image
 
 to  
 ![color image](https://github.com/zapell/eecs442_p1/blob/master/00125aligned.jpg)
+
+
+This involved calculating the best offset by holding one of the color channels constant and figuring out how much in the x and y direction the image needed to be moved.
+
+Another example of a picture of Efros himself
+!(https://github.com/zapell/eecs442_p1/blob/master/efros_tableau.jpg)  
+!(https://github.com/zapell/eecs442_p1/blob/master/aligned_efros_tableau.jpg)
+
+## Part 2
+For small images this offset algorithm is quick enough, but for large images it can be extremely inefficient.  To fix this problem I implemented an image pyramid where each level downsamples the last by a factor of 4.  I calculated the offset at each level and aligned the image through the pyramid.  This method allows a much larger coverage of offsets between channels more efficiently than a brute force search would.  
+
+A large image of scenic Seoul  
+![here](https://github.com/zapell/eecs442_p1/blob/master/seoul_tableau.jpg)  
+does not lose any of its beauty through the pyramid algorithm.  
+!(https://github.com/zapell/eecs442_p1/blob/master/seoul_aligned.jpg)
