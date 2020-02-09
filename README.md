@@ -10,5 +10,5 @@ The main objective was to transform the 3 channel black and white image
 ![this](https://github.com/zapell/eecs442_p1/blob/master/00125v.jpg)
 
 
-to 
+to  
 ![color image](https://github.com/zapell/eecs442_p1/blob/master/00125aligned.jpg)
